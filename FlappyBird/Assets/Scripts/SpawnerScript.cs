@@ -4,7 +4,7 @@ using System.Collections;
 public class SpawnerScript : MonoBehaviour
 {
 
-    // Use this for initialization
+    
     void Start()
     {
         SpawnObject = SpawnObjects[Random.Range(0, SpawnObjects.Length)];
@@ -15,7 +15,7 @@ public class SpawnerScript : MonoBehaviour
     {
         if (GameStateManager.GameState == GameState.Playing)
         {
-            //random y position
+            //przykładowa  pozycja  przy  starcie
             float y = Random.Range(-0.5f, 1f);
             GameObject go = Instantiate(SpawnObject, this.transform.position + new Vector3(0, y, 0), Quaternion.identity) as GameObject;
         }

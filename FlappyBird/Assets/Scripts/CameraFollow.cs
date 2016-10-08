@@ -3,7 +3,7 @@ using System.Collections;
 
 public class CameraFollow : MonoBehaviour {
 
-	// Use this for initialization
+	
 	void Start () {
         cameraZ = transform.position.z;
 	}

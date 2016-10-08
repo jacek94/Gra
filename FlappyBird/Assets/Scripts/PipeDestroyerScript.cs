@@ -5,12 +5,12 @@ using System.Text;
 using UnityEngine;
 
 
-    class PipeDestroyerScript : MonoBehaviour
+class PipeDestroyerScript : MonoBehaviour
+{
+    void OnTriggerEnter2D(Collider2D col)
     {
-        void OnTriggerEnter2D(Collider2D col)
-        {
-            if (col.tag == "Pipe" || col.tag == "Pipeblank")
-                Destroy(col.gameObject.transform.parent.gameObject); //free up some memory
-        }
+        if (col.tag == "Pipe" || col.tag == "Pipeblank")
+            Destroy(col.gameObject.transform.parent.gameObject); //zwolnienie  pamięci  ,  jeśli jaki obiekt  nie  jest aktualnie  używany  w  grze
     }
+}
 

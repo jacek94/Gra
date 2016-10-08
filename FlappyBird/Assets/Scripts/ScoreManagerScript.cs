@@ -5,16 +5,16 @@ public class ScoreManagerScript : MonoBehaviour {
 
     public static int Score { get; set; }
 
-	// Use this for initialization
+	
 	void Start () {
         (Tens.gameObject as GameObject).SetActive(false);
         (Hundreds.gameObject as GameObject).SetActive(false);
 	}
 	
-	// Update is called once per frame
+	// aktualizowanie  wyniku  co  1  klatkę
 	void Update () {
 
-        if (previousScore != Score) //save perf from non needed calculations
+        if (previousScore != Score) ////zapamiętaj  wynik   gdy  wynik  0
         { 
             if(Score < 10)
             {

@@ -4,13 +4,13 @@ using System.Collections;
 public class FloorMoveScript : MonoBehaviour
 {
 
-    // Use this for initialization
+
     void Start()
     {
 
     }
 
-    // Update is called once per frame
+    // aktualizowanie pozycji   jeden  raz  na  klatkę 
     void Update()
     {
         if (transform.localPosition.x < -3.9f)
